@@ -27,4 +27,4 @@ jobs:
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
     - name: Restart node
-      run: echo $(date) > /httpdocs/tmp/restart.txt
+      run: echo $(date) > ./tmp/restart.txt
